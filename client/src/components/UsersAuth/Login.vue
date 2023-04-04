@@ -17,7 +17,7 @@
                 <h3>{{messageText}}</h3>
             </div>
             <div class="delete__btns">
-                <ui-button @click.prevent="messageDialog">Close</ui-button>
+                <ui-button @click="messageDialog">Close</ui-button>
             </div>
         </ui-dialog>
 

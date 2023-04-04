@@ -92,6 +92,7 @@ export const UsersModule = {
         //Request to Server
         async getUsers({state, commit}, selectedSort) {
             if (!selectedSort) {
+                axios.defaults.headers.common['Authorization'] = localStorage.getItem('token');
                 await axios.get(`/users?page=${state.page}`)
                 .then(response => {
                     commit('setUsers', response.data.users);

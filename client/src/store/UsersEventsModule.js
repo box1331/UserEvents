@@ -90,6 +90,7 @@ export const UsersEventsModule = {
         //Request to Server
         async getEventsAll({state, commit}, selectedSort) {
             if (!selectedSort) {
+                axios.defaults.headers.common['Authorization'] = localStorage.getItem('token');
                 await axios.get(`/events?page=${state.page}`)
                 .then(response => {
                     commit('setEvents', response.data.events)
@@ -106,7 +107,11 @@ export const UsersEventsModule = {
 
         async getEvents({state, commit}, selectedSort) {
             if (!selectedSort) {
-                await axios.get(`/events?page=${state.page}`)
+                await axios.get(`/events?page=${state.page}`, {
+                    headers: {
+                        Authorization: localStorage.getItem('token')
+                    }
+                })
                 .then(response => {
                     commit('setEvents', response.data.events)
                     commit('setPageTotal', response.data.pageTotal)

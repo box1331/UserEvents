@@ -87,6 +87,7 @@ export const UserDataModule = {
         //Request to Server
         async getUsersInfo({state, commit}, selectedSort) {
             if (!selectedSort) {
+                axios.defaults.headers.common['Authorization'] = localStorage.getItem('token');
                 await axios.get(`/usersInfo?pageInfo=${state.pageInfo}`)
                 .then(response => {
                     commit('setUsersInfo', response.data.users);
@@ -105,6 +106,7 @@ export const UserDataModule = {
             }
         },
         async getEventsInfo({state, commit}) {
+            axios.defaults.headers.common['Authorization'] = localStorage.getItem('token');
             await axios.get(`/events`)
             .then(response => {
                 commit('setEvents', response.data.events);
