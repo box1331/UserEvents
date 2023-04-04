@@ -1,0 +1,262 @@
+.app-wrapper {
+    padding-top: 30px;
+    min-height: calc(100vh);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    background: linear-gradient(to bottom, #00d2ff, #928dab);
+    color: #fff;
+}
+
+.page-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(80vh);
+}
+
+.page-all {
+    position: relative;
+    top: 60px;
+}
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.page-placing {
+    padding: 5px 0;
+    margin: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    min-height: 8vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.navbar__btns {
+    cursor: pointer;
+}
+  
+a {
+    padding: 10px 20px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 15px;
+    margin: 10px;
+    color:red;
+}
+
+h4 {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+p {
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Table */
+table {   
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    border: 3px solid white;
+    background-color: #0093b4;
+    flex-basis: 25%;
+}
+
+.my-table__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.table-user-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-user__edit {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.table-user__correct {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;   
+    background-color: white;
+}
+
+/* Users */
+.table-user__update {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+}
+
+/* Events */
+.table-user__updates {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+}
+
+.input__updates {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+}
+ 
+th, td {
+    border: 1px solid white;
+    padding: 10px 15px;
+    width: 20%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* User data */
+.row-heigth {
+    min-height: 65px;
+}
+
+/* Name update*/
+.row-user-name {
+    font-weight: 700; 
+    color: rgba(0, 0, 0, 0.6);
+    background: rgb(182, 182, 182);
+}
+
+/* Name read*/
+.my-table__name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: rgb(61, 61, 61);
+}
+
+.my-table__nameLink {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color:rgb(29, 76, 218);
+    cursor: pointer;
+}
+ 
+.my-table__action {
+    text-align: center;
+}
+
+.my-table__header {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: rgb(39, 39, 39);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* Table-user-event */
+.table-user-event {
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    border: 3px solid white;
+    background-color: #0093b4;
+    flex-basis: 25%;
+}
+
+/* User row 20% */
+.table-user__row {
+    border: 1px solid white;
+    padding: 10px 15px;
+    width: 25%;
+ }
+
+/* Pagination */
+.my-table-pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.page {
+    padding: 7px;
+    margin: 5px 10px 10px 0;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+.page:hover {
+    background: #0093b4;
+    cursor: pointer;
+    color: white;
+}
+.page__selected {
+    background: #0093b4;
+    cursor: pointer;
+    color: white;
+}
+
+/* Sort on the Server */
+.page-sort {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+
+.page__sorts {
+    display: flex;
+    justify-content:flex-end;
+    text-align: center;
+    color: white;
+}
+
+/* uiError */
+.delete__btns {
+    text-align: end;
+
+}
